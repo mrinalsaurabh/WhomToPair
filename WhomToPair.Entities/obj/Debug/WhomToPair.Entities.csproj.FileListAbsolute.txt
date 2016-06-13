@@ -1,5 +1,0 @@
-H:\Mrinal\Code\WhomToPair\WhomToPair.Entities\bin\Debug\WhomToPair.Entities.dll
-H:\Mrinal\Code\WhomToPair\WhomToPair.Entities\bin\Debug\WhomToPair.Entities.pdb
-H:\Mrinal\Code\WhomToPair\WhomToPair.Entities\obj\Debug\WhomToPair.Entities.csprojResolveAssemblyReference.cache
-H:\Mrinal\Code\WhomToPair\WhomToPair.Entities\obj\Debug\WhomToPair.Entities.dll
-H:\Mrinal\Code\WhomToPair\WhomToPair.Entities\obj\Debug\WhomToPair.Entities.pdb
