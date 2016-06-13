@@ -1,0 +1,61 @@
+﻿@model List<WhomToPair.Web.Pair>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+@using (Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <th>
+                First
+            </th>
+            <th>
+                Second
+            </th>
+            <th>
+                Number
+            </th>
+            <th></th>
+        </tr>
+    
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <tr>
+            <td>
+                @Html.TextBox("pairs[" + @i + "].First", Model[i].First, new { htmlAttributes = new { @class = "form-control" } })
+            </td>
+            <td>
+                @Html.TextBox("pairs[" + @i + "].Second", Model[i].Second, new { htmlAttributes = new { @class = "form-control" } })
+            </td>
+            <td>
+                @Html.TextBox("pairs[" + @i + "].Count", Model[i].Count, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Count, "", new { @class = "text-danger" })
+            </td>
+            <td>
+               <div class="increment">Increment</div>
+            </td>
+        </tr>
+    }
+    
+        <tr>
+            <td colspan="4">
+                <input type="submit" value="Submit" />
+            </td>
+        </tr>
+    </table>
+}
+</body>
+</html>
